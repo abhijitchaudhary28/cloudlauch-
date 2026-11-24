@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CloudLaunch — a learning project for web development, containerization, and cloud deployment.">
+  <title>CloudLaunch | From Code to Cloud</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-glow glow-one"></div><div class="background-glow glow-two"></div>
+  <nav class="nav">
+    <a class="brand" href="#home"><span class="brand-mark">↗</span> CloudLaunch<span class="accent">.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a><a href="#journey">Journey</a><a href="#stack">Tech Stack</a><a href="#about">About</a>
+    </div>
+    <a class="nav-cta" href="#journey">Explore project <span>↗</span></a>
+  </nav>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> MY CLOUD DEPLOYMENT PROJECT</div>
+        <h1>From local code<br>to the <span class="gradient-text">cloud.</span></h1>
+        <p class="hero-description">A hands-on journey building a website, packaging it into a Docker container, and deploying it to cloud infrastructure.</p>
+        <div class="hero-actions"><a class="button primary" href="#journey">Explore the journey <span>→</span></a><a class="button secondary" href="#stack">Our toolkit</a></div>
+        <div class="mini-stats"><div><strong>01</strong><span>Web app</span></div><div><strong>02</strong><span>Container</span></div><div><strong>03</strong><span>Cloud</span></div></div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-outer"></div><div class="orbit orbit-inner"></div>
+        <div class="cloud-core"><div class="cloud-symbol">☁</div><div class="core-label">CLOUD</div><div class="core-sub">deployment</div></div>
+        <div class="floating-card card-docker"><span class="icon">🐳</span><div><b>Docker</b><small>Containerization</small></div><span class="card-check">✓</span></div>
+        <div class="floating-card card-server"><span class="icon">▣</span><div><b>Cloud Server</b><small>Infrastructure</small></div><span class="card-check">↗</span></div>
+        <div class="floating-card card-code"><span class="icon">⌘</span><div><b>Web App</b><small>HTML · CSS · JS</small></div><span class="card-check">✓</span></div>
+        <div class="visual-caption"><span class="pulse"></span> BUILD · PACKAGE · DEPLOY</div>
+      </div>
+    </section>
+
+    <section class="section journey" id="journey">
+      <div class="section-heading"><div class="eyebrow">THE WORKFLOW</div><h2>Our deployment <span class="gradient-text">journey</span></h2><p>Each step takes our application closer to running on the internet.</p></div>
+      <div class="journey-grid">
+        <article class="journey-card"><div class="step">01 / DEVELOP</div><div class="large-icon">⌨</div><h3>Build locally</h3><p>Create the website and test it on our own computer.</p></article>
+        <article class="journey-card"><div class="step">02 / PACKAGE</div><div class="large-icon">🐳</div><h3>Containerize</h3><p>Package the website and web server into a Docker image.</p></article>
+        <article class="journey-card"><div class="step">03 / SHIP</div><div class="large-icon">⇧</div><h3>Deploy to cloud</h3><p>Run the container on a cloud virtual machine.</p></article>
+        <article class="journey-card"><div class="step">04 / CONNECT</div><div class="large-icon">◎</div><h3>Go live</h3><p>Configure access so visitors can reach our website.</p></article>
+      </div>
+    </section>
+
+    <section class="section stack" id="stack">
+      <div class="section-heading"><div class="eyebrow">TOOLS WE'RE LEARNING</div><h2>Our technology <span class="gradient-text">stack</span></h2><p>Tools that will help us build, package, and deliver the application.</p></div>
+      <div class="stack-grid">
+        <article class="stack-item"><div class="stack-icon html-icon">5</div><div><h3>HTML5</h3><p>Website structure and content</p></div><span class="stack-badge">Frontend</span></article>
+        <article class="stack-item"><div class="stack-icon css-icon">✳</div><div><h3>CSS3</h3><p>Layout, styling, and responsive design</p></div><span class="stack-badge">Frontend</span></article>
+        <article class="stack-item"><div class="stack-icon js-icon">JS</div><div><h3>JavaScript</h3><p>Interactions and functionality</p></div><span class="stack-badge">Frontend</span></article>
+        <article class="stack-item"><div class="stack-icon docker-icon">🐳</div><div><h3>Docker</h3><p>Images and containers</p></div><span class="stack-badge">Container</span></article>
+        <article class="stack-item"><div class="stack-icon nginx-icon">N</div><div><h3>Nginx</h3><p>Web server for static files</p></div><span class="stack-badge">Server</span></article>
+        <article class="stack-item"><div class="stack-icon aws-icon">☁</div><div><h3>AWS EC2</h3><p>Cloud virtual machine</p></div><span class="stack-badge">Cloud</span></article>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="about-panel"><div class="about-copy"><div class="eyebrow">ABOUT CLOUDLAUNCH</div><h2>Learning by<br><span class="gradient-text">building.</span></h2><p>CloudLaunch is a practical beginner project that explores the path from writing a website to running it in a container on cloud infrastructure. The goal is to learn each component, understand the commands, and document the process.</p><a class="button secondary" href="#home">Back to top ↑</a></div><div class="terminal"><div class="terminal-top"><span></span><span></span><span></span><label>deployment-terminal</label></div><div class="terminal-body"><p><span class="terminal-muted">$</span> <span class="terminal-cmd">journey --start</span></p><p class="terminal-output">Initializing CloudLaunch...</p><p><span class="terminal-muted">✓</span> Website source ready</p><p><span class="terminal-muted">○</span> Docker image — next step</p><p><span class="terminal-muted">○</span> Cloud deployment — planned</p><p class="terminal-prompt"><span class="terminal-muted">$</span> <span class="cursor">▋</span></p></div></div></div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#home">CloudLaunch<span class="accent">.</span></a><p>Built as a learning project · Web development + Docker + Cloud</p><span class="footer-mark">© <span id="year"></span> CloudLaunch</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
